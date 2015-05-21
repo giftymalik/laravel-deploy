@@ -19,3 +19,10 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::get('test', function() {
+    return [
+        'status'    =>  true,
+        'message'   =>  'Welcome to the controllers'
+    ];
+});
